@@ -1,0 +1,238 @@
+
+.logo{
+    margin-left: 120px;
+}
+/* Estilo para la frase "Locas por el cine" */
+.locas-por-el-cine {
+    font-size: 24px;  /* Tamaño de la fuente más grande */
+    color: black;     /* Color negro */
+    font-weight: bold; /* Opción para hacer el texto en negrita, si lo prefieres */
+    text-align: center; /* Centrar el texto */
+}
+
+/* Estilos generales */
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #e6f5e4 !important;
+    margin: 0px;
+    padding: 0;
+    min-height: 100vh; /* Asegura que el cuerpo cubra toda la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para la navbar */
+nav {
+    background-color: #ffadff;
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Estilos para las filas y columnas */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+#botoncito1 {
+    background-color: #d855d8; /* Color de fondo */
+    color: rgb(0, 0, 0);       /* Color del texto */
+    padding: 15px 30px; 
+   margin-bottom: 20px;       /* Tamaño del botón */
+    font-size: 16px;           /* Tamaño del texto */
+    border: none;              /* Sin borde */
+    border-radius: 8px;        /* Bordes redondeados */
+    cursor: pointer;           /* Cambiar cursor */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+#botoncito2 {
+
+    background-color: #d855d8; /* Color de fondo */
+    color: rgb(0, 0, 0);       /* Color del texto */
+    position: relative;
+    left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+    padding: 15px 30px; 
+   margin-top: 50px;
+    font-size: 16px;           /* Tamaño del texto */
+    border: none;              /* Sin borde */
+    border-radius: 8px;        /* Bordes redondeados */
+    cursor: pointer;           /* Cambiar cursor */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+#botoncito3 {
+    background-color: #d855d8; /* Color de fondo */
+    color: rgb(0, 0, 0);       /* Color del texto */
+    position: relative;
+    left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+    padding: 15px 30px; 
+   margin-top: 50px;
+    font-size: 16px;           /* Tamaño del texto */
+    border: none;              /* Sin borde */
+    border-radius: 8px;        /* Bordes redondeados */
+    cursor: pointer;           /* Cambiar cursor */
+    transition: background-color 0.3s ease; /* Transición suave */   
+}
+
+#botoncito4{
+    background-color: #d855d8; /* Color de fondo */
+    color: rgb(0, 0, 0);       /* Color del texto */
+    position: relative;
+    left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+    padding: 15px 30px; 
+   margin-top: 50px;
+    font-size: 16px;           /* Tamaño del texto */
+    border: none;              /* Sin borde */
+    border-radius: 8px;        /* Bordes redondeados */
+    cursor: pointer;           /* Cambiar cursor */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+#botoncitoform {
+
+    background-color: #d855d8;
+    border: none; 
+}
+
+  /* Estilo para las sinopsis */
+  .sinopsis {
+    display: none; /* Por defecto está oculta */
+    background-color: #ffadff ; /* Fondo semi-transparente */
+    color: white; /* Texto en blanco */
+    padding: 15px;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%; /* Centramos verticalmente */
+    left: 50%; /* Centramos horizontalmente */
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 80%; /* Ajustamos el tamaño */
+    text-align: center;
+  }
+  
+  /* Mostrar la sinopsis al hacer hover sobre la imagen */
+  .col1:hover .sinopsis {
+    display: block; /* Muestra la sinopsis cuando el ratón está sobre la imagen */
+  }
+  
+  .col1 {
+    position: relative; /* Esto es necesario para posicionar la sinopsis dentro del contenedor */
+  }
+  
+  /* Efecto hover para la imagen */
+  .hover-effect {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    width: 100%;  /* Se asegura de que las imágenes ocupen el ancho completo del contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+  }
+  
+  .hover-effect:hover {
+    opacity: 0.3; /* La imagen se desvanece cuando el ratón pasa sobre ella */
+  }
+  
+
+.col {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+    padding: 20px;
+    padding-top: 15px;
+    background-color:  #ffadff;;
+    border-radius: 8px;
+}
+
+.col1 {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+    padding: 20px;
+    padding-top: 15px;
+    background-color: #ffadff;
+    border-radius: 8px;
+    height: 750px; /* Limita la altura del recuadro */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+p {
+    color: #666;
+}
+
+body::after {
+    content: "";
+    display: block;
+    height: 50px;
+}
+#Esdeveniments {
+    padding: 20px;
+  }
+  
+  #Esdeveniments img {
+    width: 100%;  /* Ajusta la imagen al 100% del ancho del carrusel */
+    height: auto;
+    max-height: 400px; /* Limita la altura máxima */
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .carousel {
+    margin-bottom: 20px;  /* Espacio inferior entre carruseles */
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .mb-3{
+    margin-left: 10px;
+    margin-right: 100px;
+  }
+#contact{
+    margin-left: 70px;
+}
+
+  
